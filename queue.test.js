@@ -17,12 +17,16 @@ describe('Queue', () => {
     queue.elements = [1,2,3]
     expect(queue.add(4)).toEqual([1,2,3,4])
   })
-
-  // it('Deve escolher o primeiro item da fila', () => {
-  //   // Seu código aqui
-  // })
-
-  // it('Deve remover o primeiro item da fila', () => {
-  //   // Seu código aqui
-  // })
+  
+  it('Deve escolher o primeiro item da fila', () => {
+    const queue = new Queue()
+    queue.elements = [1,2,3]
+    expect(queue.peek()).toEqual(1)
+  })
+  
+  it('Deve remover o primeiro item da fila', () => {
+    const queue = new Queue()
+    queue.elements = [1,2,3]
+    expect(queue.dequeue()).toEqual([2,3])
+  })
 })

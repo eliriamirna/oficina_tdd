@@ -8,17 +8,18 @@ class Queue {
     return this.elements.length
   }
 
-  add(element) {
-    this.elements.push(element)
+  add(item) {
+    this.elements.push(item)
     return this.elements
   }
 
   peek() {
-
+    return this.elements[0]
   }
 
   dequeue() {
-
+    this.elements.shift()
+    return this.elements
   } 
 }
 
