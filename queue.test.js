@@ -27,6 +27,6 @@ describe('Queue', () => {
   it('Deve remover o primeiro item da fila', () => {
     const queue = new Queue()
     queue.elements = [1,2,3]
-    expect(queue.dequeue()).toEqual([2,3])
+    expect(queue.dequeue()).toEqual(1)
   })
 })

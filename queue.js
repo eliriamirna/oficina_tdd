@@ -18,8 +18,7 @@ class Queue {
   }
 
   dequeue() {
-    this.elements.shift()
-    return this.elements
+    return this.elements.shift()
   } 
 }
 
